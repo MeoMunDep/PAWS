@@ -30,32 +30,20 @@ fi
 create_default_configs() {
     cat > configs.json << EOL
 {
-    "timeZone": "en-US",
-    "rotateProxy": false,
-    "skipInvalidProxy": false,
-    "proxyRotationInterval": 2,
-    "delayEachAccount": [5, 8],
-    "timeToRestartAllAccounts": 300,
-    "howManyAccountsRunInOneTime": 10,
-    "doTasks": true,
-    "playGames": true,
-    "referralCode": ""
+  "limit": 100,
+  "countdown": 300,
+  "country_time": "en-US",
+  "referralCode": "ko8u3JXw",
+  "delayEachAccount": [1, 81]
 }
 EOL
 }
 
-check_configs() {
-    if ! node -e "const cfg=require('./configs.json');if(typeof cfg.howManyAccountsRunInOneTime !== 'number' || cfg.howManyAccountsRunInOneTime < 1) throw new Error('Invalid config');" 2>/dev/null; then
-        print_red "Invalid configuration detected. Resetting to default values..."
-        create_default_configs
-        print_green "Configuration reset completed."
-    fi
-}
 
 while true; do
     clear
     echo "============================================================================"
-    echo "    name BOT SETUP AND RUN SCRIPT"
+    echo "    PAWS BOT SETUP AND RUN SCRIPT by @MeoMunDep"
     echo "============================================================================"
     echo
     echo "Current directory: $(pwd)"
@@ -87,7 +75,7 @@ while true; do
                 print_green "Created configs.json with default values"
             fi
 
-            check_configs
+            
 
             for file in datas.txt wallets.txt proxies.txt; do
                 if [ ! -f "$file" ]; then
@@ -115,7 +103,7 @@ while true; do
             else
                 print_green "Using node_modules from current directory"
             fi
-            node bot
+            cd paws && node bot
             read -p "Press Enter to continue..."
             ;;
         4)
