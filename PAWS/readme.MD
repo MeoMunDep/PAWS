@@ -85,6 +85,6 @@ UQ...
 💡 Usage:
 
 > You need to `cd` to the file after extract it
-> To run the bot, use the following command: `cd paws-main/paws; node bot`
+> To run the bot, use the following command: `cd paws-main/paws; node meomundep`
 
 🎇Enjoy!
