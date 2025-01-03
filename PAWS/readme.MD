@@ -87,4 +87,6 @@ UQ...
 > You need to `cd` to the file after extract it
 > To run the bot, use the following command: `cd paws-main/paws; node meomundep`
 
+> To run the wallet bot, type: `cd paws-main/paws; node meomundep_ton` or `cd paws-main/paws; node meomundep_solana`
+
 🎇Enjoy!
