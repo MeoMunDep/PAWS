@@ -57,15 +57,7 @@ query_id.../user...
 query_id.../user...
 ```
 
-### 3. `wallets.txt` 💼 - Cannot update yet.
-
-```txt - wallet address
-abc...xyz
-abc...xyz
-abc...xyz
-```
-
-### 4. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
+### 3. `proxies.txt` 🌐 - Proxy is an option. If you have one, fill it in; otherwise, leave it blank.
 
 ```txt
 http://user:password@host:port
@@ -74,12 +66,35 @@ socks4://user:password@host:port
 socks5://user:password@host:port
 ```
 
-### 5. `wallets.txt` 💳 - Wallet address is an option. If you have one, fill it in. If you already link an address to 1 account and want to unlink it, just fill that line with blank.
+### 4. `wallets.txt` 💳 - Wallet address is an option. If you have one, fill it in. If you already link an address to 1 account and want to unlink it, just fill that line with blank.
+
+- Create multiple wallet here: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+
 
 ```txt
 UQ...
 UQ...
 UQ...
+```
+
+### 5. `tonPrivateKeys.txt` 💳 - For connecting TON wallets on website.
+
+- Create multiple wallet here: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+
+```txt
+abc..xyz
+abc..xyz
+abc..xyz
+```
+
+### 6. `solanaPrivateKeys.txt` 💳 - For connecting SOLANA wallets on website.
+
+- Create multiple wallet here: [Link](https://github.com/MeoMunDep/Automatic-Ultimate-Create-Wallets-for-Airdrop)
+
+```txt
+abc...xyz
+abc...xyz
+abc...xyz
 ```
 
 💡 Usage:
