@@ -1,6 +1,6 @@
 📞 Contact
 
-> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux.)
+> [Termux guides if you run on mobile](https://github.com/MeoMunDep/Guides-for-using-my-script-on-termux)
 
 
 > If you encounter any issues or have questions, feel free to reach out:
@@ -43,9 +43,12 @@ Download Node.js and npm here: [Download Link](https://t.me/KeoAirDropFreeNe/257
 
 ```json
 {
-  "limit": 5, //number of accounts run in a row
-  "countdown": 300, //time to restarts all the accounts - count by seconds
-  "country_time": "vi-VN" //timestamp base on the country
+  "limit": 100,
+  "countdown": 300,
+  "referralCode": "ko8u3JXw",
+  "delayEachAccount": [1, 81],
+  "doChristmasTasks": true,
+  "limitAccountForConnectWallets": 100
 }
 ```
 
@@ -81,6 +84,6 @@ UQ...
 💡 Usage:
 
 > You need to `cd` to the file after extract it
-> To run the bot, use the following command: `cd paws-main/paws; node meomundep`
+> To run the bot, use the following command: `cd paws; node meomundep`
 
 🎇Enjoy!

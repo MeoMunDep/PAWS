@@ -32,7 +32,6 @@ create_default_configs() {
 {
   "limit": 100,
   "countdown": 300,
-  "country_time": "en-US",
   "referralCode": "ko8u3JXw",
   "delayEachAccount": [1, 81],
   "doChristmasTasks": true
